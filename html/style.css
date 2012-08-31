@@ -1,0 +1,1752 @@
+/*
+ * BASIC ELEMENT STYLING
+ */
+
+html
+{
+    color: #000;
+    background: #FFF;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #FFF;
+    color: #000;
+    width: 100%;
+
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.231;
+}
+
+a,
+a:link
+{
+    text-decoration: underline;
+    background-color: inherit;
+    color: #515151;
+}
+
+a:visited
+{
+    text-decoration: underline;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+a:active
+{
+    text-decoration: underline;
+}
+
+p,
+dd
+{
+    line-height: 1.5;
+}
+
+strong
+{
+    font-weight: bold;
+}
+
+em
+{
+    font-style: italic;
+}
+
+abbr,
+acronym
+{
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+p,
+fieldset,
+pre
+{
+    margin-bottom: 1em;
+}
+
+th
+{
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 2px 10px 1px 0;
+    font-size: 110%;
+    padding: 0 0 7px 0;
+    background-color: inherit;
+    color: #606060;
+}
+
+td
+{
+    padding: .4em 0;
+    font-size: 85%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Trebuchet MS', Georgia, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 100%;
+    background-color: inherit;
+    color: #606060;
+    border-bottom: 0px;
+}
+
+h1
+{
+    font-size: 185%;
+}
+
+h2
+{
+    font-size: 170%;
+}
+
+h3
+{
+    font-size: 150%;
+}
+
+h4
+{
+    font-size: 137%;
+}
+
+h5
+{
+    font-size: 110%;
+}
+
+h6
+{
+    font-size: 100%;
+}
+
+body, div,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, code,
+form, fieldset, legend,
+p, blockquote
+{
+    margin: 0;
+    padding: 0px;
+}
+
+input, textarea
+{
+    margin: 0;
+    padding: 1px;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: inherit;
+}
+
+fieldset,
+img
+{
+    border: 0;
+}
+
+address, caption, cite, code, dfn,
+em, strong,
+th, var
+{
+    font-style: normal;
+    font-weight: normal;
+}
+
+li
+{
+    list-style: none;
+}
+
+caption,
+th
+{
+    text-align: left;
+}
+
+html[dir="rtl"] caption,
+html[dir="rtl"] th
+{
+    text-align: right;
+}
+
+q:before,
+q:after
+{
+    content: '';
+}
+
+abbr,
+acronym
+{
+    border: 0;
+    font-variant: normal;
+}
+
+sup
+{
+    vertical-align: text-top;
+}
+
+sub
+{
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+select[multiple]
+{
+    height: 100px;
+}
+
+legend
+{ 
+    background-color: inherit;
+    color: #000;
+}
+
+pre, code, kbd, samp, tt
+{
+    font-family: monospace;
+    line-height: 100%;
+}
+
+#ft
+{
+    clear: both;
+}
+
+#bd:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*
+ * MAIN DIVs
+ */
+
+#wrapper,
+#doc
+{
+    width: 100%;
+}
+
+#doc:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#nav-access
+{
+    position: absolute;
+    top: -1000px;
+}
+
+html[dir="ltr"] #nav-access
+{
+    left: -1000px;
+}
+
+html[dir="rtl"] #nav-access
+{
+    right: -1000px;
+}
+
+#content,
+#postcontent
+{
+    margin: 1em 1em;
+    overflow: hidden;
+}
+
+#postcontent {
+    clear: both;
+    background-color: #F6F6F6;
+    border: 1px solid #E4E4E4;
+    color: #505050;
+    line-height: 1.5em;
+    padding: 6px;
+}
+
+#innernav {
+    margin: 0 1em;
+}
+
+
+/*
+ * HEADER
+ */
+
+#header
+{
+    color: #F8F8F8;
+    background-color: #282C31;
+    border-top: 1px solid white;
+    left: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#header h1
+{
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+#header h1 a
+{
+    background: url(images/typo3/logo.png) left 50% no-repeat;
+    padding: 0;
+    padding-left: 60px;
+    margin: 0 14px;
+    font-family: Arial, sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+html[dir="rtl"] #header h1 a
+{
+    padding-left: 0;
+    padding-right: 60px;
+    background: url(images/typo3/logo.png) right 50% no-repeat;
+}
+
+#header h1 a:link,
+#header h1 a:visited
+{ 
+    color: #fff; 
+}
+
+#header h1 a:active
+{
+    text-decoration: none;
+}
+
+#header h1 a:hover
+{
+    text-decoration: none;
+}
+
+#nav-main
+{
+    #background: white url(http://forge.typo3.org/themes/TYPO3/images/header_bg.png) repeat-x;
+    background: white url(images/typo3/header_bg.png) repeat-x;
+    font-size: 80%;
+    height: 22px;
+    padding-top: 5px;
+}
+
+#nav-main ul.first-of-type
+{
+    float: left;
+    margin-right: 5px;
+}
+
+#nav-main ul.account
+{
+    float: right;
+    margin-right: 5px;
+}
+
+html[dir="rtl"] #nav-main ul
+{
+    float: left;
+    margin-left: 5px;
+}
+
+#nav-main ul li
+{
+    float: left;
+}
+
+html[dir="rtl"] #nav-main ul li
+{
+    float: right;
+}
+
+#nav-main ul li a
+{
+    padding: 2px 15px 0.5em 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 120%;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#nav-main ul li a:link,
+#nav-main ul li a:visited
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#nav-main ul li a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+#nav-secondary
+{
+    color: #606060;
+    background: none repeat scroll 0 0 #E0E0E0;
+    border-top: 1px solid #FFFFFF;
+    height: 25px;
+    font-size: 13.6px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+#nav-secondary h2 {
+    color: #606060;
+    font-size: 13.6px;
+}
+
+#nav-secondary a 
+{
+    color: #606060;
+    text-decoration: none;
+}
+
+/*
+ * MENUBAR
+ */
+
+.menubar
+{
+    visibility: visible;
+    position: static;
+}
+
+.menubar ul,
+.menubar li,
+.menubar h6
+{
+    margin: 0;
+    padding: 0;
+}
+
+.menubar>.bd>ul:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+
+/*
+ * FOOTER
+ */
+
+#footer
+{
+    color: #515151;
+    font-size: 70%;
+    font-style: italic;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#footer-contents
+{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#footer .nav li
+{
+    display: inline;
+}
+
+#footer .nav li:after
+{
+    content:  "|";
+    margin: 0 10px;
+}
+
+#footer .nav li:last-child:after
+{
+    content: '';
+    margin: 0;
+}
+
+#footer a {
+    font-weight: bold;
+}
+
+
+/*
+ * MESSAGES
+ */
+
+#site-message
+{
+    background-color: #ffe;
+    border: 1px solid #fc9;
+    margin-bottom: 2em;
+    padding: 10px 25px;
+}
+
+#site-message .success
+{
+    color: #3f3;
+}
+
+#site-message .error
+{
+    color: #f33;
+}
+
+.hide
+{
+    display: none;
+}
+
+.general-message
+{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.general-message h2
+{
+    margin-bottom: 0.7em;
+}
+
+p.help,
+span.help_text
+{
+    font-size: 85%;
+    font-style: italic;
+}
+
+/* FORM ERRORS */
+
+ul.errorlist
+{
+    margin: 0;
+    padding: 0;
+}
+
+.errorlist li
+{
+    color: #f33;
+    background-color: #ffe;
+    border: 1px solid #fc9;
+    margin-bottom: 0.5em;
+    padding: 10px 25px;
+}
+
+/* TITLES */
+
+h1.title,
+h2.title,
+h3.title
+{
+    padding: 0.2em 0 !important;
+}
+
+
+/*
+ * PAGE BODY
+ */
+
+#body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#body:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.intro
+{
+    margin: 0.5em 1em;
+    margin-right: 25%;
+    margin-bottom: 1.5em;
+    line-height: 1.3em;
+}
+
+/* TABLES */
+
+.module table, 
+.module-primary table
+{
+    width: 100%;
+}
+
+td.language,
+td.code,
+td.profile,
+td.username
+{
+    padding-left: 5px;
+}
+
+html[dir="rtl"] td.language,
+html[dir="rtl"] td.code,
+html[dir="rtl"] td.profile,
+html[dir="rtl"] td.username
+{
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+tr.even, 
+td.even, 
+li.even
+{
+    background: #F6F6F6;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+tr td {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* MODULES */
+
+.clear
+{
+    clear: both;
+}
+
+.module
+{
+    width: 48%;
+    float: right;
+    margin: 0;
+}
+
+html[dir="rtl"] .module
+{
+    float: left;
+}
+
+.module.first
+{
+    float: left;
+}
+
+html[dir="rtl"] .module.first
+{
+    float: right;
+}
+
+.module .hd h2, 
+.module-primary .hd h2
+{
+    font-size: 18px;
+    margin: 0 0 10px;
+    padding: 2px 10px 1px 0;
+}
+
+html[dir="rtl"] .module .hd h2,
+html[dir="rtl"] .module-primary .hd h2
+{
+    margin-left: 0;
+    margin-right: 0.5em;
+}
+
+.module .bd,
+.module-primary .bd
+{
+    margin: 0;
+}
+
+.module .nomargin,
+.module-primary .nomargin
+{
+    margin: 0;
+}
+
+.module .bd h2, 
+.module-primary .bd h2
+{
+    font-size: 165%;
+    color: #4b4742;
+    margin-bottom: 10px;
+}
+
+.module .bd h3, 
+.module-primary .bd h3
+{
+    font-size: 120%;
+}
+
+/* UPLOAD FORM / UPDATE FROM VCS / CAPTCHA */
+
+div#upload p,
+div#upload ul,
+div#update p,
+p.captcha,
+.general-message input
+{
+    font-size: 85%;
+    margin-bottom: 0.5em;
+}
+
+
+/*
+ * LOGIN/REGISTER PAGE
+ */
+
+#login,
+#register,
+#contact
+{
+    width: 30em;
+    margin: 2em auto;
+    border: 2px solid #ccc;
+    padding: 1em;
+    background-color: #e5edef;
+    text-align: left;
+}
+
+#login[dir="rtl"],
+#register[dir="rtl"],
+#contact[dir="rtl"]
+{
+    text-align: right;
+}
+
+#login h2,
+#register h2,
+#contact h2
+{
+    margin-bottom: 0.7em;
+}
+
+#login p,
+#register p,
+#contact p
+{
+    margin-bottom: 1em;
+}
+
+
+#loginform,
+#registerform,
+#contactform
+{
+    font-size: 85%;
+}
+
+#login input[type="text"],
+#login input[type="password"],
+#login select,
+#register input[type="text"],
+#register input[type="password"],
+#contact input[type="text"],
+#contact input[type="password"],
+#contact textarea
+{
+    width: 97%;
+    -moz-appearance: textfield;
+    -moz-binding: url("chrome://global/content/platformHTMLBindings.xml#inputFields");
+    -moz-user-select: text;
+    background-color: -moz-field;
+    border: 2px inset threedface;
+    color: -moz-fieldtext;
+    cursor: text;
+    font: -moz-field;
+    letter-spacing: normal;
+    line-height: normal !important;
+    padding: 1px 0;
+    text-align: start;
+    text-indent: 0;
+    text-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+#login .submit,
+#register .submit,
+#contact .submit
+{
+    margin-bottom: 0;
+    text-align: right;
+}
+
+#login[dir="rtl"] .submit,
+#register[dir="rtl"] .submit,
+#contact[dir="rtl"] .submit
+{
+    text-align: left;
+}
+
+.loginlink,
+.registerlink
+{
+    width: 20em;
+    margin: 0 auto 8em;
+    padding: 0 1em;
+    font-size: 137%;
+    text-align: center;
+}
+
+
+/*
+ * ABOUT PAGE
+ */
+
+p.about
+{
+    margin-bottom: 1em;
+}
+
+
+/*
+ * DOCUMENTATION
+ */
+
+.documentation
+{
+    margin: 2em;
+}
+
+.documentation p
+{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.documentation ul li
+{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.documentation ol li
+{
+    list-style-type: inherit;
+    list-style-position: inside;
+}
+
+p.top
+{
+    margin-left: 2em;
+}
+
+
+/*
+ * TABBED MENU
+ */
+
+div#submenu
+{
+    background: none repeat scroll 0 0 #FF8700;
+    border-top: 1px solid #FFFFFF;
+    height: 21px;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+div#submenu-tabs
+{
+    float: left;
+    font-weight: bold;
+}
+
+html[dir="rtl"] div#submenu-tabs
+{
+    float: right;
+}
+
+div#submenu-tabs a
+{
+    color: #FFFFFF;
+    background-color: #FF9F33;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0.4em 10px 0.5em;
+    margin: 0;
+}
+
+html[dir="rtl"] div#submenu-tabs a
+{
+    float: right;
+}
+
+div#submenu-tabs a:hover
+{
+    background-color: #FFBD73;
+    color: #FFFFFF;
+}
+
+div#submenu-tabs a.selected, div#submenu-tabs a.selected:hover {
+    background: none repeat scroll 0 0 #FFBD73;
+    border-top: 1px solid #FFFFFF;
+    font-weight: bold;
+}
+
+/*
+ * SETTINGS PAGE
+ */
+
+div.settings-container
+{
+    display: block;
+    margin: 0 auto 2em;
+}
+
+div.centered
+{
+    width: 95%;
+}
+
+.settings-container h2
+{
+    margin-bottom: 0.7em;
+}
+
+.settings-container p
+{
+    margin-bottom: 1em;
+}
+
+.settings-container form label,
+.settings-container form input,
+.settings-container form select
+{
+    font-size: 85%;
+}
+
+.settings-container input,
+.settings-container select,
+.settings-container textarea,
+#login input[type="text"],
+#login input[type="password"],
+#login select,
+#register input[type="text"],
+#register input[type="password"]
+{
+    display: block;
+}
+
+.settings-container table
+{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.settings-container td
+{
+    font-size: inherit;
+}
+
+div#settings
+{
+    margin-bottom: 2em;
+}
+
+/* ADMIN TABLE BACKGROUNDS */
+
+.other-selected
+{
+    background-color: #8cb904 !important;
+}
+
+.delete-selected
+{
+    background-color: #D54E21 !important;
+}
+
+.other-selected a,
+.delete-selected a
+{
+    color: #fff;
+}
+
+/* COMMON BUTTONS */
+
+.common-buttons-block
+{
+    margin-bottom: 1em;
+}
+
+.common-buttons-block input
+{
+    margin-bottom: 0.3em;
+}
+
+.common-buttons-block input[type="submit"]
+{
+    cursor: pointer;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 2px 5px 2px 23px;
+    min-height: 16px;
+}
+
+html[dir="rtl"] .common-buttons-block input[type="submit"]
+{
+    padding: 2px 23px 2px 5px;
+    background-position: 95% center;
+}
+
+.common-buttons-block input[type="submit"]:hover,
+.common-buttons-block input[type="submit"]:active,
+.common-buttons-block input[type="submit"]:focus
+{
+    border-color: #999;
+    border-style: solid;
+}
+
+.common-buttons-block .accept
+{
+    background-image: url('images/accept.png');
+}
+
+.common-buttons-block .login
+{
+    background-image: url('images/door_in.png');
+}
+
+.common-buttons-block .news-publish
+{
+    background-image: url('images/newspaper_go.png');
+}
+
+.common-buttons-block .password-change
+{
+    background-image: url('images/key_go.png');
+}
+
+.common-buttons-block .register
+{
+    background-image: url('images/user_go.png');
+}
+
+.common-buttons-block .save
+{
+    background-image: url('images/database_save.png');
+}
+
+.common-buttons-block .send
+{
+    background-image: url('images/email_go.png');
+}
+
+.common-buttons-block .term-extract
+{
+    background-image: url('images/book_next.png');
+    margin: 0 auto;
+}
+
+.upload input[type="submit"]
+{
+    background-image: url('images/page_get.png');
+}
+
+.vcs-update input[type="submit"]
+{
+    background-image: url('images/drive_network.png');
+}
+
+
+/*
+ * SUMMARIES
+ */
+
+div.newsitem-sep
+{
+    border-bottom: 1px solid #ddd;
+    margin: 1.5em 0 2em;
+}
+
+#translationsummarylegend {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#translationsummarylegend > div {
+    float: left;
+    margin-right: 8px;
+}
+
+#translationsummarylegend div img
+{
+    vertical-align: middle;
+    width: 25px;
+    height: 15px;
+    padding: 0px 5px;
+}
+
+div#rss-alerts ul,
+div.latestnews ul
+{
+    margin: 0 1em;
+}
+
+div#rss-alerts li,
+div.latestnews li
+{
+    list-style-type: square;
+}
+
+div.latestnews p.subscribe
+{
+    background-image: url('images/feed.png');
+    background-repeat: no-repeat;
+    line-height: 3;
+    /* ltr */
+    background-position: right center;
+    text-align: right;
+    padding-right: 2em;
+}
+
+html[dir="rtl"] div.latestnews p.subscribe
+{
+    /* undo ltr */
+    padding-right: 0;
+    /* rtl */
+    background-position: left center;
+    text-align: left;
+    padding-left: 2em;
+}
+
+div.topcontributors
+{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+table.topcontributors
+{
+    width: 100%;
+}
+
+table.topcontributors th
+{
+    padding: 0 1em;
+}
+
+table.topcontributors td
+{
+    font-size: inherit;
+    padding: .4em 1em;
+}
+
+td.stats-number
+{
+    padding-right: 10px;
+    text-align: right;
+}
+
+td.stats-name
+{
+    font-weight: normal;
+}
+
+html[dir="rtl"] td.language,
+html[dir="rtl"] td.stats-name,
+html[dir="rtl"] select#id_ui_lang option
+{
+    text-align: right !important;
+}
+
+div.item-statistics
+{
+    background-color: inherit;
+    color: #606060;
+    font-size: 1.5em;
+}
+
+div.item-statistics dl
+{
+    margin: 0;
+}
+
+div.item-statistics dl dt
+{
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 100px;
+}
+
+html[dir="rtl"] div.item-statistics dl dt
+{
+    clear: right;
+    float: right;
+    text-align: left;
+}
+
+div.item-statistics dl dd
+{
+    line-height: inherit;
+    margin: 0 0 0 110px;
+}
+
+html[dir="rtl"] div.item-statistics dl dd
+{
+    margin: 0 110px 0 0;
+}
+
+div.small
+{
+    font-size: 1em;
+}
+
+.tiny
+{
+    font-size: 0.9em;
+}
+
+img.error
+{
+    vertical-align: middle;
+}
+
+/* 
+ * Pretty Graphs, mostly from http://l10n.gnome.org/
+ */
+
+div.graph
+{
+    height: 14px;
+    width: 100px;
+    border: 0 none;
+    position: relative;
+}
+
+div.translated
+{
+    position: absolute;
+    top: 2px;
+    height: 100%;
+    background: #448844;
+    background: url('images/bar-translated.png');
+    background-repeat: repeat-x;
+    color: black;
+}
+
+div.goodchange
+{
+    position: absolute;
+    top: 2px;
+    height: 100%;
+    background: #55DD55;
+    background: url('images/bar-goodchange.png');
+    background-repeat: repeat-x;
+    color: black;
+}
+
+div.fuzzy
+{
+    position: absolute;
+    top: 2px;
+    height: 100%;
+    background: #4444AA;
+    background: url('images/bar-fuzzy.png');
+    background-repeat: repeat-x;
+    color: black;
+}
+
+div.untranslated
+{
+    position: absolute;
+    height: 100%;
+    top: 2px;
+    background: #FF4444;
+    background: url('images/bar-untranslated.png');
+    background-repeat: repeat-x;
+    color: black;
+}
+
+div.graph[dir="ltr"] div.translated
+{
+    left: 0%;
+}
+
+div.graph[dir="rtl"] div.translated
+{
+    right: 0%;
+}
+
+/* SORTABLE */
+
+table.sortable th
+{
+    cursor: pointer;
+}
+
+.sortkey
+{
+    display: none;
+}
+
+/* PAGER */
+
+div.translation-nav
+{
+    margin-bottom: 1.3em;
+}
+
+ul.pager
+{
+    font-size: 85%;
+    margin: 10px;
+    padding: 5px;
+}
+
+ul.pager li
+{
+    float: left;
+}
+
+html[dir="rtl"] ul.pager li
+{
+    float: right;
+}
+
+ul.pager li a,
+ul.pager li a:visited
+{
+    text-decoration: none;
+}
+
+ul.pager li span.current-link,
+ul.pager li a:hover
+{
+    background-color: #F6F6F6;
+    color: #606060;
+}
+
+ul.pager li span.current-link,
+ul.pager li a
+{
+    margin: 0.1em;
+    padding: 0.2em 0.5em;
+}
+
+ul.pager li a.nth-link,
+ul.pager li a.prevnext-link
+{
+    font-weight: bold;
+}
+
+ul.pager li span.current-link
+{
+    font-weight: bold;
+}
+
+/*
+ * NAVIGATION BAR
+ */
+
+.title a
+{
+    unicode-bidi: embed;
+}
+
+div#breadcrumbs
+{
+    padding-top: .2em;
+    margin-left: 1em;
+}
+
+html[dir="rtl"] div#breadcrumbs
+{
+    float: left;
+    margin-right: 0;
+    margin-left: 5em;
+}
+
+/* SEARCH */
+
+div#search
+{
+    float: right;
+    padding: 5px .5em 0;
+    position: relative;
+}
+
+div#search label {
+    color: #606060;
+    font-size: 90%;
+}
+
+div#search[dir="rtl"]
+{
+    float: left;
+}
+
+div#search input[type=text]
+{
+    -moz-appearance: textfield;
+    -moz-binding: url("chrome://global/content/platformHTMLBindings.xml#inputFields");
+    -moz-user-select: text;
+    background-color: -moz-field;
+    border: 1px solid #BBBBBB;
+    color: -moz-fieldtext;
+    cursor: text;
+    font: -moz-field;
+    letter-spacing: normal;
+    line-height: normal !important;
+    padding: 2px 1px 2px;
+    text-align: start;
+    text-indent: 0;
+    text-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    word-spacing: normal;
+    width: 180px;
+}
+
+div#search .advancedlink
+{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    margin: 0 0 0 -5px;
+    top: -3px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+div#search[dir="rtl"] .advancedlink
+{
+    margin: 0 -5px 0 0;
+}
+
+div.advancedsearch
+{
+    background-color: #fff;
+    border-bottom: 1px solid #BBBBBB;
+    border-left: 1px solid #BBBBBB;
+    border-right: 1px solid #BBBBBB;
+    overflow: auto;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 8px;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    display: none;
+    margin-top: 0;
+    width: 171px;
+}
+div.advancedsearch li {
+    font-weight: normal;
+    text-transform: none;
+    padding: 4px 2px;
+}
+
+#search[dir="rtl"] div.advancedsearch
+{
+    padding-left: 8px;
+    padding-right: 3px;
+}
+
+div.nodefaultsearch
+{
+    background-color: #f1f3f5 !important;
+}
+
+label.inputHint
+{
+    display: none;
+}
+
+.togglesearch
+{
+    cursor: pointer;
+    vertical-align: text-top;
+}
+
+/* Fix for Opera + RTL */
+div#search[dir="rtl"] .togglesearch
+{
+    margin-left: -5px;
+}
+
+/* FILENAMES, STATS */
+
+.icon
+{
+    float: left;
+    margin-right: 8px;
+}
+
+.icon[dir="rtl"]
+{
+    float: right;
+    margin-left: 8px;
+}
+
+.translations-nav
+{
+    clear: both;
+    margin-top: 1em;
+}
+
+.translations-nav:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.translations-nav li
+{
+    float: left;
+    padding: 0 0 0 9px;
+}
+
+html[dir="rtl"] .translations-nav li
+{
+    float: right;
+    padding: 0 9px 0 0;
+}
+
+.translations-nav li:after
+{
+    content:  "|";
+    margin: 0 0 0 10px;
+}
+
+html[dir="rtl"] .translations-nav li:after
+{
+    content:  "|";
+    margin: 0 10px 0 0;
+}
+
+.translations-nav li:last-child:after,
+html[dir="rtl"] .translations-nav li:last-child:after
+{
+    content: '';
+    margin: 0;
+}
+
+.translations-nav a:link
+{
+    color: #807970;
+}
+
+.translations-nav a:visited
+{
+    color: #807970;
+}
+
+.translations-nav .important
+{
+    font-weight: bold;
+}
+
+
+/*
+ * MISC
+ */
+
+a.collapse,
+a.slide
+{
+    cursor: pointer;
+}
+
+.collapsethis,
+.slidethis
+{
+    display: none;
+}
+
+
+/*
+ * LANGUAGE SPECIFIC SETTINGS
+ */
+
+/*
+ * Language codes that are styled with right-to-left (rtl) layout:
+ *
+ * ar (Arabic)
+ * arc (Aramaic)
+ * dv (Dhivehi)
+ * fa (Persian)
+ * he (Hebrew)
+ * ks (Kashmir)
+ * ps (Pashto)
+ * ur (Urdu)
+ * yi (Yiddish)
+ *
+ * See: http://translate.sourceforge.net/wiki/l10n/displaysettings
+ * Also see: pagelayout.py::languagedir()
+ *
+ */
+
+/* Doesn't work: [dir="rtl"] */
+*:lang(ar), *:lang(arc), *:lang(dv), *:lang(fa), *:lang(he), *:lang(ks), *:lang(ps), *:lang(ur), *:lang(yi)
+{
+    /* If any styling is necessary for the rtl languages, add it here */
+    direction: rtl;
+}
+
+:lang(ak)
+{
+    font-family: Lucida, "DejaVu Sans", inherit;
+}
+
+:lang(ar)
+{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+:lang(bn)
+{
+    font-family: FreeSans, MuktiNarrow, Vrinda, inherit;
+    font-size: medium;
+    line-height: 110%;
+}
+
+:lang(el)
+{
+    font-family: "DejaVu Sans", inherit;
+}
+
+:lang(fa)
+{
+    font-family: Terafik, Traffic, Roya, Nazli, Nazanin, sans;
+    font-size: large;
+}
+
+:lang(ja),
+:lang(ko)
+{
+    font-size: medium;
+}
+
+:lang(zh)
+{
+    font-size: large;
+}
+
+:lang(km)
+{
+    font-family: "Khmer OS System", "Khmer OS", "Khmer Kampongtrach", "CDT Khmer", inherit;
+    line-height: 170%;
+}
+
+:lang(vi)
+{
+    font-family: "Lucida Grande", "Vu Phu Tho", "DejaVu Sans", inherit;
+}
+
+:lang(vi) a:hover[href]
+{
+    text-decoration: none;
+    color: #606047;
+}
+
+:lang(vi) a:active[href]
+{
+    text-decoration: none;
+    color: #606047;
+}
+
+/* FIX FOR HEADING SIZES */
+
+h2:lang(bn),
+h2:lang(ja),
+h2:lang(ko),
+h2:lang(zh)
+{
+    font-size: 170%;
+}
+
+h2:lang(bn) a,
+h2:lang(ja) a,
+h2:lang(ko) a,
+h2:lang(zh) a
+{
+    font-size: 100%;
+}
+
+.module.small {
+    width: 19%;
+}
+
+.module.ext,
+.module.core {
+   float: left;
+    margin-left: 18px;
+   width: 39%;
+}

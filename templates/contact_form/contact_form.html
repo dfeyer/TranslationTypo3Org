@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n baseurl %}
+
+{% block title %}{{ block.super }}: {% trans "Contact Us" %}{% endblock %}
+ 
+{% block content %}
+<div id="contact" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+	<p>Use the official translation mailing list to contact us.</p>
+</div>
+{% endblock %}
